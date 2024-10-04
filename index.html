@@ -5,11 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Frontend</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/337002c4cc.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -60,7 +64,45 @@
             </div>
         </section>
         <!-- Hero Section End -->
-    </main>
+
+
+            <div class="swiper mySwiper container ">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://www.shutterstock.com/image-photo/chameleon-close-eye-portrait-reptile-600nw-2466925375.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://img.freepik.com/free-photo/close-up-chameleon-nature_23-2151724890.jpg" alt="">
+                </div>
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </div>
+   </main>
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+              autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+            loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>
